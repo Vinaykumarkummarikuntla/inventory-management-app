@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventory Management</title>
+  </head>
+  <h1>Inventory Management</h1>
+  <body>
+    <form onsubmit="saveToServer(event)">
+      <label>Item Name</label>
+      <input type="text" id="itemname" name="Itemname" required />
+      <label>Description</label>
+      <input type="text" id="description" name="Description" required />
+      <label> Price </label>
+      <input type="number" id="price" name="Price" required />
+      <label> Quantity </label>
+      <input type="number" id="quantity" name="Quantity" required />
+
+      <button>Submit</button>
+    </form>
+
+    <ul id="itemDetails"></ul>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+    
+  </body>
+</html>
